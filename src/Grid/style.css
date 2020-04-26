@@ -1,0 +1,17 @@
+.grid {
+    margin: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.grid-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.status{
+    font-size: 36px;
+    color: aliceblue;
+}
