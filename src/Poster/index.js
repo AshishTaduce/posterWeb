@@ -7,32 +7,32 @@ class Poster extends React.Component {
         let movie = this.props.movie;
         let posterUrl = 'http://image.tmdb.org/t/p/w185' + movie.poster_path;
         return (
-        <Link to={
-                {pathname:`/detailsPage/${movie.id}`, 
-                state: {
-                    movie: movie,
+            <Link to={
+                {pathname:`/detailsPage/${movie.id}`,
+                    state: {
+                        movie: movie,
+                    }
                 }
-            }
-        }>
-                    <div className='poster' style={{
-                        backgroundImage: 'url(' + posterUrl + ')',
-                        backgroundRepeat: 'no-repeat',
-                        backgroundSize: 'cover',
-                        overflow: 'hidden',
-                    }}>
-                        <div className='details'>
-                            <h4 className='title'>
-                                {movie.title}
-                            </h4>
-                            <div className='overview-rating'>
-                                <p className= "overview">{(movie.overview).substring(0,200)}</p>
-        
-                                <div className='rating'>
-                                    {movie.genre_ids[1]}
-                                </div>
+            }>
+                <div className='poster' style={{
+                    backgroundImage: 'url(' + posterUrl + ')',
+                    backgroundRepeat: 'no-repeat',
+                    backgroundSize: 'cover',
+                    overflow: 'hidden',
+                }}>
+                    <div className='details'>
+                        <h4 className='title'>
+                            {movie.title}
+                        </h4>
+                        <div className='overview-rating'>
+                            <p className= "overview">{(movie.overview).substring(0,200)}</p>
+
+                            <div className='rating'>
+                                {movie.genre_ids[1]}
                             </div>
                         </div>
-                    </div>                
+                    </div>
+                </div>
             </Link>
         );
     }

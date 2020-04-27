@@ -1,25 +1,9 @@
 import Poster from "../Poster"
 import React from "react"
 import './style.css';
-
+import {BrowserRouter as Router} from "react-router-dom/";
 
 class MoviesList extends React.Component{
-
-    // fetchMovieJson(){
-    //     let moviesList;
-    //     fetch('https://gist.githubusercontent.com/McLarenCollege/bff99d586c33a1fc3f7b081227a501fe/raw/d6574b2104a3abe514e010df1719aadc17ee4c8c/movies_data.json')
-    //     .then(response => response.json())
-    //     .then((jsonData) => {
-    //         console.log(jsonData)
-    //         moviesList = jsonData;
-    //     })
-    //     .catch((error) => {
-    //         console.error(error)
-    //     });
-
-    //     return moviesList
-    // }
-
     constructor(props){
         super(props);
         this.state = {
@@ -64,15 +48,20 @@ class MoviesList extends React.Component{
         }
             else if(this.state.isLoading) {
                 return (
-                <div className={'loading-page'}>
+                <div  className={'loading-page'}>
                     <div className="spinner"/>
                 </div>
             );
             }
             else{
-                return (<div className = "movie-list">
-                {this.state.movies}
-                </div>)
+                return (
+                    <Router>
+                        <div className = "movie-list">
+                            {this.state.movies}
+                        </div>
+                    </Router>
+
+                )
             }
     }
 }
