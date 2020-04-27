@@ -2,24 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b90c7361-d05c-4de1-9b2d-9703870a814d" name="Default Changelist" comment="Initial commit">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DetailsPage/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DetailsPage/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GameBoard/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Grid/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Grid/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MoveList/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MoviesList/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MoviesList/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Poster/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Poster/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SearchPage/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SearchPage/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Square/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Square/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/movies.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/index copy.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/node_modules/.bin/acorn" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/node_modules/.bin/acorn.cmd" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/node_modules/.bin/acorn.ps1" afterDir="false" />
@@ -7065,16 +7047,15 @@
       <change afterPath="$PROJECT_DIR$/src/node_modules/babel-runtime/node_modules/core-js/library/modules/es7.string.match-all.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/node_modules/babel-runtime/node_modules/core-js/library/modules/es7.string.pad-end.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/logo.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/serviceWorker.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/serviceWorker.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/setupTests.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/setupTests.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Grid/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Grid/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Grid/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Grid/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MoviesList/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/MoviesList/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MoviesList/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/MoviesList/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Poster/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Poster/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Poster/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Poster/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SearchPage/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/SearchPage/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SearchPage/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/SearchPage/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -7163,7 +7144,22 @@
       <workItem from="1587920789023" duration="1705000" />
       <workItem from="1587922501827" duration="2000" />
       <workItem from="1587922524725" duration="1832000" />
+      <workItem from="1587924948903" duration="707000" />
+      <workItem from="1587925686579" duration="1875000" />
+      <workItem from="1587928692749" duration="1785000" />
+      <workItem from="1587930501507" duration="1988000" />
+      <workItem from="1587932900368" duration="1786000" />
+      <workItem from="1587951512377" duration="1780000" />
+      <workItem from="1587953319184" duration="1009000" />
     </task>
+    <task id="LOCAL-00001" summary="Details page done with search bar in progress">
+      <created>1587925170739</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1587925170739</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -7171,41 +7167,42 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
+    <MESSAGE value="Details page done with search bar in progress" />
+    <option name="LAST_COMMIT_MESSAGE" value="Details page done with search bar in progress" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="2" y="0" key="CommitChangelistDialog2" timestamp="1586943526048">
+    <state x="15" y="0" key="CommitChangelistDialog2" timestamp="1587954538412">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="2" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1586943526048" />
+    <state x="15" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1587954538412" />
     <state x="0" y="60" key="DiffContextDialog" timestamp="1586941571924">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="0" y="60" key="DiffContextDialog/0.0.1366.728@0.0.1366.728" timestamp="1586941571924" />
-    <state width="1345" height="188" key="GridCell.Tab.0.bottom" timestamp="1587922497603">
+    <state width="1345" height="183" key="GridCell.Tab.0.bottom" timestamp="1587953786084">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="188" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1587922497603" />
+    <state width="1345" height="183" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1587953786084" />
     <state width="776" height="197" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1587096697941" />
-    <state width="1345" height="188" key="GridCell.Tab.0.center" timestamp="1587922497603">
+    <state width="1345" height="183" key="GridCell.Tab.0.center" timestamp="1587953786084">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="188" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1587922497603" />
+    <state width="1345" height="183" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1587953786084" />
     <state width="776" height="197" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1587096697941" />
-    <state width="1345" height="188" key="GridCell.Tab.0.left" timestamp="1587922497603">
+    <state width="1345" height="183" key="GridCell.Tab.0.left" timestamp="1587953786084">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="188" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1587922497603" />
+    <state width="1345" height="183" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1587953786084" />
     <state width="776" height="197" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1587096697941" />
-    <state width="1345" height="188" key="GridCell.Tab.0.right" timestamp="1587922497603">
+    <state width="1345" height="183" key="GridCell.Tab.0.right" timestamp="1587953786084">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="188" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1587922497603" />
+    <state width="1345" height="183" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1587953786084" />
     <state width="776" height="197" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1587096697941" />
-    <state x="0" y="93" key="Vcs.Push.Dialog.v2" timestamp="1586941546386">
+    <state x="263" y="79" key="Vcs.Push.Dialog.v2" timestamp="1587925179107">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="0" y="93" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1586941546386" />
+    <state x="263" y="79" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1587925179107" />
     <state x="246" y="16" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1586941590051">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

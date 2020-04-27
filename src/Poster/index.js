@@ -27,7 +27,7 @@ class Poster extends React.Component {
                             <div className='overview-rating'>
                                 <p className= "overview">{(movie.overview).substring(0,200)}</p>
         
-                                <div class='rating'>
+                                <div className='rating'>
                                     {movie.genre_ids[1]}
                                 </div>
                             </div>

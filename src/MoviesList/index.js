@@ -34,8 +34,10 @@ class MoviesList extends React.Component{
     }
 
     async getPosters() {
-        setTimeout(function () {}, 3000);        
-        let moviesList = await fetch('https://api.themoviedb.org/3/discover/movie?api_key=a68598b6e3e81567486644082b967d8f&sort_by=revenue.desc');
+        setTimeout(function () {}, 3000);
+        let mainPageLink = 'https://api.themoviedb.org/3/discover/movie?api_key=a68598b6e3e81567486644082b967d8f';
+        console.log(this.props.movieUrl === null, this.props.movieUrl );
+        let moviesList = await fetch((this.props.movieUrl === undefined || this.props.movieUrl === null) ? mainPageLink : this.props.movieUrl);
         moviesList = (await moviesList.json()).results;
         console.log(moviesList.length);
         let items = [];
@@ -57,11 +59,16 @@ class MoviesList extends React.Component{
     }
 
     render (){
-            if(this.state.isLoading) return (
+        if(this.props.movieUrl === undefined && this.props.fromSearchPage){
+            return <div className={'search-something'}>Search Something</div>
+        }
+            else if(this.state.isLoading) {
+                return (
                 <div className={'loading-page'}>
                     <div className="spinner"/>
                 </div>
             );
+            }
             else{
                 return (<div className = "movie-list">
                 {this.state.movies}
