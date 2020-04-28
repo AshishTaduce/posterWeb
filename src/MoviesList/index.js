@@ -46,6 +46,7 @@ class MoviesList extends React.Component{
         if(this.props.movieUrl === undefined && this.props.fromSearchPage){
             return <div className={'search-something'}>Search Something</div>
         }
+
             else if(this.state.isLoading) {
                 return (
                 <div  className={'loading-page'}>
@@ -53,7 +54,9 @@ class MoviesList extends React.Component{
                 </div>
             );
             }
-            else{
+        else if(this.state.movies.length === 0) return <div className={'search-something'}>Nothing found</div>;
+
+        else{
                 return (
                     <Router>
                         <div className = "movie-list">

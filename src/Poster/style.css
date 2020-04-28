@@ -16,7 +16,6 @@
     flex-direction: column;
     justify-content: flex-end;
     background-color: #1E1E1E;
-
     width: 200px;
     height: 300px;
 }
@@ -25,6 +24,7 @@
     display: none;
 }
 
+.poster:hover
 .details {
     /* font-size: 14px; */
     /* border: 2px solid #1E1E1E; */

@@ -10,7 +10,7 @@ class Grid extends React.Component {
             <Router>
                 <div className={'main-body'}>
 
-                        <Link to={{pathname:`/search`,}} className={'search-bar'}
+                        <Link to={`/search`} className={'search-bar'}
                               // onClick={window.location.reload.bind(window.location)}
                         >
                             Search
