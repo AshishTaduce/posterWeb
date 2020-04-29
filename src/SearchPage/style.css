@@ -6,7 +6,17 @@
     text-align: center;
 }
 
+.search-something{
+    color: #f3f3f3;
+    background-color: #1E1E1E;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    font-size: 24px;
+}
+
 .main-body {
-    height: 100%;
+    height: 100vh;
     width: 100%;
 }

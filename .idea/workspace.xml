@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b90c7361-d05c-4de1-9b2d-9703870a814d" name="Default Changelist" comment="pERFORMING MiNoR hAcK">
+    <list default="true" id="b90c7361-d05c-4de1-9b2d-9703870a814d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/DetailsPage/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/DetailsPage/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Grid/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Grid/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MoviesList/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/MoviesList/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MoviesList/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/MoviesList/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Poster/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Poster/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Poster/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Poster/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/SearchPage/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/SearchPage/style.css" afterDir="false" />
     </list>
@@ -111,6 +113,14 @@
       <workItem from="1588060578969" duration="1777000" />
       <workItem from="1588062378131" duration="1711000" />
       <workItem from="1588064485506" duration="6000" />
+      <workItem from="1588066047208" duration="252000" />
+      <workItem from="1588110041776" duration="1601000" />
+      <workItem from="1588111833584" duration="1664000" />
+      <workItem from="1588113653147" duration="1595000" />
+      <workItem from="1588115486819" duration="1626000" />
+      <workItem from="1588117317892" duration="1813000" />
+      <workItem from="1588119164815" duration="1800000" />
+      <workItem from="1588121074750" duration="214000" />
     </task>
     <task id="LOCAL-00001" summary="Details page done with search bar in progress">
       <created>1587925170739</created>
@@ -133,7 +143,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587989562353</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Broken 1">
+      <created>1588066077917</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1588066077917</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -157,46 +174,47 @@
     <MESSAGE value="Details page done with search bar in progress" />
     <MESSAGE value="Implemented search bar, kind of" />
     <MESSAGE value="pERFORMING MiNoR hAcK" />
-    <option name="LAST_COMMIT_MESSAGE" value="pERFORMING MiNoR hAcK" />
+    <MESSAGE value="Broken 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Broken 1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="46" y="49" width="1020" height="653" key="CommitChangelistDialog2" timestamp="1588061654282">
+    <state x="46" y="49" width="1020" height="653" key="CommitChangelistDialog2" timestamp="1588066075515">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="46" y="49" width="1020" height="653" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1588061654282" />
+    <state x="46" y="49" width="1020" height="653" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1588066075515" />
     <state x="54" y="58" key="CommitChangelistDialog2/0.0.1600.860/1600.208.1366.728@0.0.1600.860" timestamp="1587989429016" />
     <state x="0" y="60" width="1092" height="609" key="DiffContextDialog" timestamp="1588061909156">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="0" y="60" width="1092" height="609" key="DiffContextDialog/0.0.1366.728@0.0.1366.728" timestamp="1588061909156" />
-    <state width="1345" height="178" key="GridCell.Tab.0.bottom" timestamp="1588063032246">
+    <state width="840" height="174" key="GridCell.Tab.0.bottom" timestamp="1588119226219">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="178" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1588063032246" />
+    <state width="840" height="174" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1588119226219" />
     <state width="788" height="231" key="GridCell.Tab.0.bottom/0.0.1600.860/1600.208.1366.728@0.0.1600.860" timestamp="1587990048635" />
     <state width="444" height="179" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1587960330564" />
-    <state width="1345" height="178" key="GridCell.Tab.0.center" timestamp="1588063032246">
+    <state width="840" height="174" key="GridCell.Tab.0.center" timestamp="1588119226219">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="178" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1588063032246" />
+    <state width="840" height="174" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1588119226219" />
     <state width="788" height="231" key="GridCell.Tab.0.center/0.0.1600.860/1600.208.1366.728@0.0.1600.860" timestamp="1587990048635" />
     <state width="444" height="179" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1587960330564" />
-    <state width="1345" height="178" key="GridCell.Tab.0.left" timestamp="1588063032246">
+    <state width="840" height="174" key="GridCell.Tab.0.left" timestamp="1588119226218">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="178" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1588063032246" />
+    <state width="840" height="174" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1588119226218" />
     <state width="788" height="231" key="GridCell.Tab.0.left/0.0.1600.860/1600.208.1366.728@0.0.1600.860" timestamp="1587990048635" />
     <state width="444" height="179" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1587960330564" />
-    <state width="1345" height="178" key="GridCell.Tab.0.right" timestamp="1588063032246">
+    <state width="840" height="174" key="GridCell.Tab.0.right" timestamp="1588119226219">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="178" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1588063032246" />
+    <state width="840" height="174" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1588119226219" />
     <state width="788" height="231" key="GridCell.Tab.0.right/0.0.1600.860/1600.208.1366.728@0.0.1600.860" timestamp="1587990048635" />
     <state width="444" height="179" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1587960330564" />
-    <state x="263" y="79" key="Vcs.Push.Dialog.v2" timestamp="1587925179107">
+    <state x="263" y="79" key="Vcs.Push.Dialog.v2" timestamp="1588066166030">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="263" y="79" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1587925179107" />
+    <state x="263" y="79" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1588066166030" />
     <state x="457" y="16" key="VcsDiffUtil.ChangesDialog" timestamp="1588061891407">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

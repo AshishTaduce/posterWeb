@@ -69,7 +69,7 @@ class MoviesList extends React.Component{
     }
 }
 
-export default MoviesList;
+export default (MoviesList);
 
 
 // https://api.themoviedb.org/3/discover/movie?api_key=a68598b6e3e81567486644082b967d8f&sort_by=revenue.desc

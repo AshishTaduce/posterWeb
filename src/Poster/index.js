@@ -1,6 +1,6 @@
 import React from 'react';
 import './style.css';
-import {BrowserRouter as Router, Link, Switch, Route} from "react-router-dom/";
+import {Link,} from "react-router-dom";
 
 class Poster extends React.Component {
     render() {
@@ -13,8 +13,12 @@ class Poster extends React.Component {
                         movie: movie,
                     }
                 }
-            }>
-                <div className='poster' style={{
+
+            }
+                  style={{ textDecoration: 'none', margin: '8px 16px' }}
+            >
+                <div className='poster'
+                     style={{
                     backgroundImage: 'url(' + posterUrl + ')',
                     backgroundRepeat: 'no-repeat',
                     backgroundSize: 'cover',
@@ -22,13 +26,13 @@ class Poster extends React.Component {
                 }}>
                     <div className='details'>
                         <h4 className='title'>
-                            {movie.title}
+                            {processTitle(movie.title)}
                         </h4>
                         <div className='overview-rating'>
-                            <p className= "overview">{(movie.overview).substring(0,200)}</p>
+                            <p className= "overview">{processDetails(movie.overview)}</p>
 
                             <div className='rating'>
-                                {movie.genre_ids[1]}
+                                {movie.vote_average}
                             </div>
                         </div>
                     </div>
@@ -38,4 +42,12 @@ class Poster extends React.Component {
     }
 }
 
-export default Poster;
+function processDetails(string){
+    return `${(string.length > 100) ? string.substring(0,100) + '...' : string}\nRead More`;
+}
+
+function processTitle(string){
+    return `${(string.length > 45) ? string.substring(0,45) + '...' : string}`;
+}
+
+export default (Poster);

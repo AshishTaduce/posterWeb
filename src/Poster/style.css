@@ -11,7 +11,6 @@
 
 .poster {
     position: relative;
-    margin: 8px 16px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -29,6 +28,7 @@
     /* font-size: 14px; */
     /* border: 2px solid #1E1E1E; */
     padding: 8px;
+    padding-top: 0;
     text-align: left;
     display: flex;
     flex-direction: column;
@@ -37,31 +37,34 @@
     width: 100%;
     color: black;
     animation: fadeIn 1s ease;
-    animation-iteration-count: 1; 
+    animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
 
 @keyframes fadeIn {
-    0% { 
-        opacity: 0; 
-    } 
-    100% { 
-        opacity: 1; 
-     } 
+    0% {
+        opacity: 0;
+        /*height: 0;*/
+    }
+    100% {
+        opacity: 1;
+        /*height: auto;*/
+     }
   }
 
 .title{
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 600;
     padding: 4px;
-    border-bottom: 0.5px solid whitesmoke;
+    border-bottom: 1px solid black;
     margin: 0;
-    margin-bottom: 8px;
+    margin-right: 16px;
     word-wrap: normal;
-    display: flex;
+    display: -webkit-box;
+    max-lines: 2;
     justify-content: center;
-    align-items: center;
-    text-align: center;
+    align-items: flex-start;
+    text-align: left;
 }
 
 .overview-rating {
@@ -79,20 +82,19 @@
     padding: 4px;
     margin: 0;
     word-wrap: normal;
-    max-lines: 5;
-    overflow: hidden;
+    /*overflow: hidden;*/
     width: 70%;
 }
 
 .rating {
-    padding: 2px;
+    padding: 8px;
+    padding-bottom: 12px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 14px;
     color: aliceblue;
     background-color: red;
-    /* height: 20px; */
     border-radius: 8px;
     text-align: center;
     margin: 8px 0;
