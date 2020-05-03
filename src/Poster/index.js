@@ -1,6 +1,6 @@
 import React from 'react';
 import './style.css';
-import {Link,} from "react-router-dom";
+import {Link} from "react-router-dom";
 
 class Poster extends React.Component {
     render() {
@@ -13,7 +13,6 @@ class Poster extends React.Component {
                         movie: movie,
                     }
                 }
-
             }
                   style={{ textDecoration: 'none', margin: '8px 16px' }}
             >

@@ -1,7 +1,6 @@
 import Poster from "../Poster"
 import React from "react"
 import './style.css';
-import {BrowserRouter as Router} from "react-router-dom/";
 
 class MoviesList extends React.Component{
     constructor(props){
@@ -26,11 +25,9 @@ class MoviesList extends React.Component{
         console.log(moviesList.length);
         let items = [];
         for(let i = 0; i < moviesList.length; i++){
-            console.log(moviesList[i].title);
             items.push(<Poster
                 posterurl = {'http://image.tmdb.org/t/p/w185' + moviesList[i].poster_path}
                 title = {moviesList[i].title}
-                genre = {moviesList[i].genres}
                 rating = {moviesList[i].genre_ids[1]}
                 overview = {moviesList[i].overview}
                 movie = {moviesList[i]}
@@ -58,12 +55,9 @@ class MoviesList extends React.Component{
 
         else{
                 return (
-                    <Router>
                         <div className = "movie-list">
                             {this.state.movies}
                         </div>
-                    </Router>
-
                 )
             }
     }
