@@ -39,3 +39,16 @@
       width: 100vw;
       background-color: #1E1E1E;
   }
+
+  .main-column{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      background-color: #1E1E1E;
+  }
+
+  .page-button {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+  }

@@ -13,7 +13,6 @@ function App() {
         <Route path={"/search/"} component={SearchPage} />
         <Route path={"/"} component = {Grid} />
       </Switch>
-
     </Router>
   );
 }
