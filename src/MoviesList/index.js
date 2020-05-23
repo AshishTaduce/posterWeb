@@ -1,35 +1,23 @@
 import Poster from "../Poster"
-import React from "react"
+import React, {useEffect, useState} from "react"
 import './style.css';
+import {Link} from "react-router-dom";
 
-class MoviesList extends React.Component{
-    constructor(props){
-        super(props);
-        this.state = {
-            currPage: Number(window.sessionStorage.getItem('currPage')) + 1 || 1,
-            isLoading : true,
-            movies : null,
-        }
+function MovieList(props) {
+    let [isLoading, setLoading] = useState(true);
+    let [movies, setMovies] = useState([]);
+    let [currPage, setcurrPage] = useState(Number(props.match.params.pageNumber) || 1);
 
-    }
+    useEffect(() => {getPosters()}, [props.match.params.pageNumber])
 
-    componentDidMount(){
-        window.sessionStorage.setItem('currPage',window.sessionStorage.getItem('currPage') || '1');
-        this.getPosters().then();
-    }
-
-    async getPosters() {
-        console.log(window.sessionStorage.getItem('currPage'), this.state.currPage, 'MMMMMMM');
-        this.setState({
-            isLoading: true,
-            movies: undefined,
-        });
-        setTimeout(function () {}, 3000);
-        let mainPageLink = 'https://api.themoviedb.org/3/discover/movie?api_key=a68598b6e3e81567486644082b967d8f&page=' + (window.sessionStorage.getItem('currPage'));
-        console.log(this.props.movieUrl === null, this.props.movieUrl );
-        let moviesList = await fetch((this.props.movieUrl === undefined || this.props.movieUrl === null) ? mainPageLink : this.props.movieUrl);
+    async function getPosters() {
+        console.log(currPage, 'is the currPage', props.match.params.pageNumber);
+        setLoading(true);
+        setMovies(undefined);
+        let mainPageLink = 'https://api.themoviedb.org/3/discover/movie?api_key=a68598b6e3e81567486644082b967d8f&page='+props.match.params.pageNumber;
+        console.log(props.movieUrl ,'Is the movie url');
+        let moviesList = await fetch((props.movieUrl === undefined || props.movieUrl === null) ? mainPageLink : props.movieUrl);
         moviesList = (await moviesList.json()).results;
-        console.log(moviesList.length);
         let items = [];
         for(let i = 0; i < moviesList.length; i++){
             items.push(<Poster
@@ -40,55 +28,46 @@ class MoviesList extends React.Component{
                 movie = {moviesList[i]}
                 />);
         }
-        this.setState({
-            isLoading: false,
-            movies: items,
-        });
+        console.log(items);
+        setLoading(false);
+        setMovies(items);
     }
 
-    render (){
-        if(this.props.movieUrl === undefined && this.props.fromSearchPage){
-            return <div className={'search-something'}>Search Something</div>
-        }
+    if(props.movieUrl === undefined && props.fromSearchPage){
+        return <div className={'search-something'}>Search Something</div>
+    }
 
-        else if(this.state.isLoading) {
-                return (
-                <div  className={'loading-page'}>
-                    <div className="spinner"/>
+    else if(isLoading || !movies) {
+        return (
+            <div  className={'loading-page'}>
+                <div className="spinner"/>
+            </div>
+        );
+    }
+
+    else if(movies.length === 0) return <div className={'search-something'}>Nothing found</div>;
+
+    else{
+        return (
+            <div className={'main-column'}>
+                <div className = "movie-list">
+                    {movies}
                 </div>
-            );
-            }
-
-        else if(this.state.movies.length === 0) return <div className={'search-something'}>Nothing found</div>;
-
-        else{
-                return (
-                        <div className={'main-column'}>
-                            <div className = "movie-list">
-                                {this.state.movies}
-                            </div>
-                            <div className={'page-button'} hidden={Number(window.sessionStorage.getItem('currPage')) <= 1}>
-                                {Number(window.sessionStorage.getItem('currPage')) > 1 ? <button onClick={() => {
-                                    window.sessionStorage.setItem('currPage', (Number(window.sessionStorage.getItem('currPage')) - 1).toString());
-                                    window.history.pushState("main page", "Movies", "/page#" + window.sessionStorage.getItem('currPage'));
-                                    this.getPosters();
-                                }}>
-                                    Previous
-                                </button> : null}
-                                <button onClick={() => {
-                                    window.sessionStorage.setItem('currPage', (Number(window.sessionStorage.getItem('currPage')) + 1).toString());
-                                    window.history.pushState("main page", "Movies", "/page#"+window.sessionStorage.getItem('currPage'));
-                                    this.getPosters();
-                                }}>
-                                    Next</button>
-                            </div>
-                        </div>
-                )
-            }
+                <div className={'page-button'} hidden={Number(currPage) <= 1}>
+                    {Number(props.match.params.pageNumber) > 1 ?
+                        <Link to={'/'+((Number(props.match.params.pageNumber)) - 1)} >
+                            Previous
+                        </Link> : null}
+                    <Link to={'/'+((Number(props.match.params.pageNumber) || 1) + 1)}>
+                        Next
+                    </Link>
+                </div>
+            </div>
+        )
     }
 }
 
-export default (MoviesList);
+export default (MovieList);
 
 
 // https://api.themoviedb.org/3/discover/movie?api_key=a68598b6e3e81567486644082b967d8f&sort_by=revenue.desc

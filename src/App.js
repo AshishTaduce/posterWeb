@@ -9,9 +9,10 @@ function App() {
   return (
     <Router>
       <Switch>
-        <Route path={"/detailsPage/:id/"} component = {DetailsPage} />
-        <Route path={"/search/"} component={SearchPage} />
-        <Route path={"/"} component = {Grid} />
+        <Route path={"/detailsPage/:id/"} component = {DetailsPage} exact/>
+        <Route path={"/search/"} component={SearchPage} exact/>
+          <Route path={"/:pageNumber"} component = {Grid} exact={true}/>
+          <Route path={"/"} component = {Grid} exact/>
       </Switch>
     </Router>
   );

@@ -10,7 +10,7 @@ class Grid extends React.Component {
                         <Link to={`/search`} className={'search-bar'}>
                             Search
                         </Link>
-                        <MoviesList fromSearchPage = {false}/>
+                        <MoviesList fromSearchPage = {false} {...this.props} />
                 </div>
         );
     }
