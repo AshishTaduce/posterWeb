@@ -6,15 +6,19 @@ import {Link} from "react-router-dom";
 function MovieList(props) {
     let [isLoading, setLoading] = useState(true);
     let [movies, setMovies] = useState([]);
-    let [currPage, setcurrPage] = useState(Number(props.match.params.pageNumber) || 1);
 
-    useEffect(() => {getPosters()}, [props.match.params.pageNumber])
+    function getPageNumber() {
+        return props.match?.params?.pageNumber;
+    }
+
+    useEffect(() => {
+        getPosters().then();
+    }, [props.match?.params?.pageNumber])
 
     async function getPosters() {
-        console.log(currPage, 'is the currPage', props.match.params.pageNumber);
         setLoading(true);
         setMovies(undefined);
-        let mainPageLink = 'https://api.themoviedb.org/3/discover/movie?api_key=a68598b6e3e81567486644082b967d8f&page='+props.match.params.pageNumber;
+        let mainPageLink = 'https://api.themoviedb.org/3/discover/movie?api_key=a68598b6e3e81567486644082b967d8f&page='+getPageNumber();
         console.log(props.movieUrl ,'Is the movie url');
         let moviesList = await fetch((props.movieUrl === undefined || props.movieUrl === null) ? mainPageLink : props.movieUrl);
         moviesList = (await moviesList.json()).results;
@@ -53,12 +57,12 @@ function MovieList(props) {
                 <div className = "movie-list">
                     {movies}
                 </div>
-                <div className={'page-button'} hidden={Number(currPage) <= 1}>
-                    {Number(props.match.params.pageNumber) > 1 ?
-                        <Link to={'/'+((Number(props.match.params.pageNumber)) - 1)} >
+                <div className={'page-button'}>
+                    {Number(getPageNumber()) > 1 ?
+                        <Link to={'/'+((Number(getPageNumber())) - 1)} >
                             Previous
                         </Link> : null}
-                    <Link to={'/'+((Number(props.match.params.pageNumber) || 1) + 1)}>
+                    <Link to={'/'+((Number(getPageNumber()) || 1) + 1)}>
                         Next
                     </Link>
                 </div>
