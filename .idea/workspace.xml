@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b90c7361-d05c-4de1-9b2d-9703870a814d" name="Default Changelist" comment="Saving current page number using session storage">
+    <list default="true" id="b90c7361-d05c-4de1-9b2d-9703870a814d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Grid/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Grid/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MoviesList/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/MoviesList/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MoviesList/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/MoviesList/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +40,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -151,7 +150,8 @@
       <workItem from="1590137275964" duration="2823000" />
       <workItem from="1590140468551" duration="2997000" />
       <workItem from="1590144448218" duration="325000" />
-      <workItem from="1590269987794" duration="3602000" />
+      <workItem from="1590269987794" duration="4958000" />
+      <workItem from="1590758916357" duration="475000" />
     </task>
     <task id="LOCAL-00001" summary="Details page done with search bar in progress">
       <created>1587925170739</created>
@@ -195,7 +195,21 @@
       <option name="project" value="LOCAL" />
       <updated>1589926494828</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Changes movielist to function. Working well now">
+      <created>1590274097098</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1590274097098</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Search page working">
+      <created>1590274763912</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1590274763912</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -221,50 +235,52 @@
     <MESSAGE value="Broken 1" />
     <MESSAGE value="Routing working properly" />
     <MESSAGE value="Saving current page number using session storage" />
-    <option name="LAST_COMMIT_MESSAGE" value="Saving current page number using session storage" />
+    <MESSAGE value="Changes movielist to function. Working well now" />
+    <MESSAGE value="Search page working" />
+    <option name="LAST_COMMIT_MESSAGE" value="Search page working" />
   </component>
   <component name="WindowStateProjectService">
     <state x="133" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1590061791257">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="133" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1590061791257" />
-    <state x="46" y="49" width="1020" height="653" key="CommitChangelistDialog2" timestamp="1590061703411">
+    <state x="46" y="49" width="1020" height="653" key="CommitChangelistDialog2" timestamp="1590274760646">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="46" y="49" width="1020" height="653" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1590061703411" />
+    <state x="46" y="49" width="1020" height="653" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1590274760646" />
     <state x="54" y="58" key="CommitChangelistDialog2/0.0.1600.860/1600.208.1366.728@0.0.1600.860" timestamp="1587989429016" />
     <state x="0" y="60" width="1092" height="609" key="DiffContextDialog" timestamp="1588487528452">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="0" y="60" width="1092" height="609" key="DiffContextDialog/0.0.1366.728@0.0.1366.728" timestamp="1588487528452" />
-    <state width="1339" height="82" key="GridCell.Tab.0.bottom" timestamp="1590144109333">
+    <state width="888" height="81" key="GridCell.Tab.0.bottom" timestamp="1590275215851">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1339" height="82" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1590144109333" />
+    <state width="888" height="81" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1590275215851" />
     <state width="788" height="231" key="GridCell.Tab.0.bottom/0.0.1600.860/1600.208.1366.728@0.0.1600.860" timestamp="1587990048635" />
     <state width="1579" height="216" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1588235082366" />
-    <state width="1339" height="82" key="GridCell.Tab.0.center" timestamp="1590144109333">
+    <state width="888" height="81" key="GridCell.Tab.0.center" timestamp="1590275215851">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1339" height="82" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1590144109333" />
+    <state width="888" height="81" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1590275215851" />
     <state width="788" height="231" key="GridCell.Tab.0.center/0.0.1600.860/1600.208.1366.728@0.0.1600.860" timestamp="1587990048635" />
     <state width="1579" height="216" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1588235082366" />
-    <state width="1339" height="82" key="GridCell.Tab.0.left" timestamp="1590144109333">
+    <state width="888" height="81" key="GridCell.Tab.0.left" timestamp="1590275215851">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1339" height="82" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1590144109333" />
+    <state width="888" height="81" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1590275215851" />
     <state width="788" height="231" key="GridCell.Tab.0.left/0.0.1600.860/1600.208.1366.728@0.0.1600.860" timestamp="1587990048635" />
     <state width="1579" height="216" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1588235082366" />
-    <state width="1339" height="82" key="GridCell.Tab.0.right" timestamp="1590144109333">
+    <state width="888" height="81" key="GridCell.Tab.0.right" timestamp="1590275215851">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1339" height="82" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1590144109333" />
+    <state width="888" height="81" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1590275215851" />
     <state width="788" height="231" key="GridCell.Tab.0.right/0.0.1600.860/1600.208.1366.728@0.0.1600.860" timestamp="1587990048635" />
     <state width="1579" height="216" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1588235082366" />
-    <state x="263" y="53" key="Vcs.Push.Dialog.v2" timestamp="1590061755058">
+    <state x="263" y="53" key="Vcs.Push.Dialog.v2" timestamp="1590274770744">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="263" y="53" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1590061755058" />
+    <state x="263" y="53" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1590274770744" />
     <state x="457" y="16" key="VcsDiffUtil.ChangesDialog" timestamp="1588061891407">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

@@ -58,13 +58,14 @@ function MovieList(props) {
                     {movies}
                 </div>
                 <div className={'page-button'}>
-                    {Number(getPageNumber()) > 1 ?
-                        <Link to={'/'+((Number(getPageNumber())) - 1)} >
-                            Previous
-                        </Link> : null}
-                    <Link to={'/'+((Number(getPageNumber()) || 1) + 1)}>
+
+
+                    <Link to={'/'+((Number(getPageNumber()) || 1) + 1)} className={'navigation-button'}>
                         Next
                     </Link>
+                    {Number(getPageNumber()) > 1 ? <Link to={'/'+((Number(getPageNumber())) - 1)} className={'navigation-button'}>
+                            Previous
+                        </Link> : null}
                 </div>
             </div>
         )
