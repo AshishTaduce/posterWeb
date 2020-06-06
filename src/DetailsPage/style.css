@@ -53,3 +53,16 @@
 .detail-content {
     font-size: 14px;
 }
+
+.detail-overview{
+    margin-bottom: 16px;
+}
+
+.video-button {
+    padding: 4px 8px;
+    margin: 0 16px 8px 0;
+}
+
+.video-button:hover{
+    cursor: pointer;
+}
